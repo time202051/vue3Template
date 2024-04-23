@@ -1,13 +1,13 @@
-import axios from 'axios';
+import axios from "axios";
 import type {
   AxiosInstance,
   AxiosError,
   AxiosRequestConfig,
   InternalAxiosRequestConfig,
   AxiosResponse
-} from 'axios';
+} from "axios";
 const config = {
-  baseURL: import.meta.env.MODE === 'development' ? '' : 'http://127.0.0.1:5174',
+  baseURL: import.meta.env.MODE === "development" ? "" : "http://127.0.0.1:5174",
   timeout: 1000
 };
 export const instance = axios.create(config);
@@ -24,9 +24,8 @@ instance.interceptors.request.use(
 
 instance.interceptors.response.use(
   function (response) {
-    // 2xx 范围内的状态码都会触发该函数。
-    // 对响应数据做点什么
-    return response.data;
+    const data = response.data.data;
+    return data;
   },
   function (error: AxiosError) {
     return Promise.reject(error);

@@ -5,3 +5,10 @@ export interface AuthState {
   };
   authMenuList: Menu.MenuOptions[];
 }
+
+export interface UserState {
+  token: string;
+  userInfo: {
+    name: string;
+  };
+}

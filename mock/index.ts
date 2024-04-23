@@ -4,6 +4,19 @@ import authMenuList from "../src/assets/json/authMenuList.json";
 
 export default [
   {
+    url: "/login",
+    method: "post",
+    response: () => {
+      return Mock.mock({
+        code: 0,
+        message: "ok",
+        data: {
+          access_token: "bqddxxwqmfncffacvbpkuxvwvqrhln"
+        }
+      });
+    }
+  },
+  {
     url: "/user/list",
     method: "get",
     response: () => {
