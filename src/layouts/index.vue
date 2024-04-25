@@ -7,12 +7,12 @@
  * @remark: 
 !-->
 <template>
-  <div>外层框架区域</div>
-  <router-view></router-view>
+  <LayoutClassic></LayoutClassic>
 </template>
 
 <script lang="ts" setup>
 import { ref, reactive } from "vue";
+import LayoutClassic from "@/layouts/LayoutClassic/index.vue";
 </script>
 
 <style lang="less" scoped></style>

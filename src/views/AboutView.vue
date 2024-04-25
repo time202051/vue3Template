@@ -13,9 +13,9 @@
 </template>
 
 <script lang="ts" setup>
-import { getUserList } from '@/api/modules/user';
+import { getUserList } from "@/api/modules/user";
 getUserList().then((res: any) => {
-  console.log('接口数据', res);
+  console.log("接口数据", res);
 });
 </script>
 

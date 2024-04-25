@@ -38,12 +38,16 @@ export const useGlobalStore = defineStore({
     // 标签页图标
     tabsIcon: true,
     // 页脚
-    footer: true
+    footer: true,
+    theme: "theme1"
   }),
   actions: {
     setGlobalState(...args: any) {
       this.$patch({ [args[0]]: args[1] });
     }
   },
-  getters: {}
+  getters: {},
+  persist: {
+    key: "geeker-global"
+  }
 });

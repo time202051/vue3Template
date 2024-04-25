@@ -34,13 +34,11 @@ const router = createRouter({
  * @description  路由拦截
  */
 router.beforeEach(async (to, from, next) => {
-  console.log("33333", to, from);
   const userStore = useUserStore();
   const authStore = useAuthStore();
 
   // 1.NProgress开始
   NProgress.start();
-  console.log(to);
 
   // 2.动态设置标题
   const title = import.meta.env.VITE_GLOB_APP_TITLE;

@@ -27,8 +27,6 @@ export const initDynamicRouter = async () => {
     }
 
     // 3.添加动态路由
-    console.log("modules", modules, authStore.flatMenuListGet);
-
     authStore.flatMenuListGet.forEach((item: any) => {
       if (item.component && typeof item.component == "string") {
         item.component = modules["/src/views" + item.component + ".vue"];

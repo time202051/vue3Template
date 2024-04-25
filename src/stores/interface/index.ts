@@ -21,6 +21,7 @@ export interface GlobalState {
   tabs: boolean;
   tabsIcon: boolean;
   footer: boolean;
+  theme?: string; //主题
 }
 
 export interface AuthState {

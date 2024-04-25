@@ -7,17 +7,24 @@
  * @remark: 
 !-->
 <template>
-  <div>权限button</div>
+  <div>
+    <div>权限button</div>
+    <el-button>Default</el-button>
+    <el-button type="primary">Primary</el-button>
+    <el-button type="success">Success</el-button>
+    <el-button type="info">Info</el-button>
+    <el-button type="warning">Warning</el-button>
+    <el-button type="danger">Danger</el-button>
+  </div>
 </template>
 
 <script lang="ts" setup>
 import { onMounted } from "vue";
 import { useRouter } from "vue-router";
+import { useCssVar } from "@vueuse/core";
 
 const router = useRouter();
-onMounted(() => {
-  console.log("权限router", router, router.options, router.getRoutes());
-});
+// const color = useCssVar("--color", someEl, { initialValue: "#eee" });
 </script>
 
 <style lang="less" scoped></style>

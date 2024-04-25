@@ -64,7 +64,7 @@
               "title": "ProTable 详情",
               "activeMenu": "/proTable/useProTable",
               "isLink": "",
-              "isHide": true,
+              "isHide": false,
               "isFull": false,
               "isAffix": false,
               "isKeepAlive": true
