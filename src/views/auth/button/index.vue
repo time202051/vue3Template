@@ -7,7 +7,7 @@
  * @remark: 
 !-->
 <template>
-  <div>
+  <div class="auth_container">
     <div>权限button</div>
     <el-button>Default</el-button>
     <el-button type="primary">Primary</el-button>
@@ -19,12 +19,17 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted } from "vue";
 import { useRouter } from "vue-router";
-import { useCssVar } from "@vueuse/core";
 
 const router = useRouter();
-// const color = useCssVar("--color", someEl, { initialValue: "#eee" });
 </script>
 
-<style lang="less" scoped></style>
+<style lang="scss" scoped>
+.auth_container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+}
+</style>

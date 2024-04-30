@@ -34,6 +34,22 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
+
+  /* --el-menu-bg-color: #ffffff;
+  --el-menu-hover-bg-color: #cccccc;
+  --el-menu-active-bg-color: var(--el-color-primary-light-9);
+  --el-menu-text-color: #333333;
+  --el-menu-active-color: var(--el-color-primary);
+  --el-menu-hover-text-color: #333333;
+  --el-menu-horizontal-sub-item-height: 50px;
+  --el-aside-logo-text-color: #303133;
+  --el-aside-border-color: #e4e7ed;
+  --el-header-logo-text-color: #303133;
+  --el-header-bg-color: #ffffff;
+  --el-header-text-color: #303133;
+  --el-header-text-color-regular: #606266;
+  --el-header-border-color: #e4e7ed; */
+  /* --el-bg-color-page: #fff; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -70,14 +86,14 @@ body {
     Inter,
     -apple-system,
     BlinkMacSystemFont,
-    'Segoe UI',
+    "Segoe UI",
     Roboto,
     Oxygen,
     Ubuntu,
     Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
     sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;

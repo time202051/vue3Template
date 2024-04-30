@@ -8,8 +8,11 @@ import * as Icons from "@element-plus/icons-vue";
 
 // element css
 import "element-plus/dist/index.css";
+
 // element dark css
 import "element-plus/theme-chalk/dark/css-vars.css";
+import "@/assets/style/customElementStyle.css";
+import "@/assets/style/index.scss";
 
 const app = createApp(App);
 app.config.errorHandler = errorHandler; //报错提示

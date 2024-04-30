@@ -37,8 +37,12 @@ function createComponentWrapper(component: any, route: any) {
 
 <style lang="scss" scoped>
 .main-box {
-  background-color: rgb(122, 122, 122);
+  padding: 10px 12px;
+  overflow-x: hidden;
+  // background-color: var(--el-bg-color-page);
+  background-color: #fff;
 }
+
 /* fade-transform */
 .fade-transform-leave-active,
 .fade-transform-enter-active {
