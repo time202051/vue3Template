@@ -1,0 +1,53 @@
+each(range(1000), {
+    .mt@{value} {
+      margin-top: (@value * 1px);
+    }
+  });
+each(range(1000), {
+    .mr@{value} {
+      margin-right: (@value * 1px);
+    }
+});
+each(range(1000), {
+    .mb@{value} {
+      margin-bottom: (@value * 1px);
+    }
+  });
+each(range(1000), {
+    .ml@{value} {
+      margin-left: (@value * 1px);
+    }
+  });
+
+each(range(1000), {
+    .pt@{value} {
+      padding-top: (@value * 1px);
+    }
+  });
+each(range(1000), {
+    .pr@{value} {
+      padding-right: (@value * 1px);
+    }
+});
+each(range(1000), {
+    .pb@{value} {
+      padding-bottom: (@value * 1px);
+    }
+  });
+each(range(1000), {
+    .pl@{value} {
+      padding-left: (@value * 1px);
+    }
+  });
+
+each(range(2000), {
+    .w@{value} {
+        //w100已被占用 表示宽100%
+        width: if((@value = 100), 100%, (@value * 1px));
+    }
+  });
+each(range(2000), {
+    .h@{value} {
+        height: (@value * 1px);
+    }
+  });
